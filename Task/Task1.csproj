@@ -53,6 +53,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Geometry\Matrix4x4.cs" />
+    <Compile Include="Geometry\Quaternion.cs" />
+    <Compile Include="Geometry\Vector3.cs" />
     <Compile Include="LoopProject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs" />
