@@ -39,7 +39,7 @@ namespace Task.Objects
 
         public override void Draw()
         {
-            Render.gfx.DrawImage(sprite, new RectangleF(gameObject.position.x, gameObject.position.y, height, width));
+            Render.gfx.DrawImage(sprite, new RectangleF(gameObject.position.x, gameObject.position.y, width, height));
         }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Geometry\Vector2.cs" />
     <Compile Include="LoopProject.cs" />
     <Compile Include="Mathf.cs" />
+    <Compile Include="MoveInput.cs" />
     <Compile Include="Objects\Component.cs" />
     <Compile Include="Objects\GameObject.cs" />
     <Compile Include="Objects\GameScript.cs" />
