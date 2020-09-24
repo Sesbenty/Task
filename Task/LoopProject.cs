@@ -10,22 +10,22 @@ namespace Task
 {
     class LoopProject
     {
-        private Project  _project;
+        private Game  game;
 
         public bool Running { get; private set; }
 
-        public void Load(Project obj)
+        public void Load(Game obj)
         {
-            _project = obj;
+            game = obj;
         }
 
         public async void Start()
         {
-            if (_project == null)
+            if (game == null)
                 throw new ArgumentException("Not load");
 
            
-            _project.Load();
+            game.Load();
 
             Running = true;
 
@@ -38,7 +38,7 @@ namespace Task
                 
                 _previousGameTime = _previousGameTime + GameTime;
                 
-                _project.Update(GameTime);
+                game.Update(GameTime);
                 
                 
                 await System.Threading.Tasks.Task.Delay(8);
@@ -48,12 +48,12 @@ namespace Task
         public void Stop()
         {
             Running = false;
-            _project?.Unload();
+            game?.Unload();
         }
       
-        public void Draw(Graphics gfx)
+        public void Draw()
         {
-            _project.Draw(gfx);
+            game.Draw();
         }
     }
 }

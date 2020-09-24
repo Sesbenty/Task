@@ -12,6 +12,11 @@ namespace Task.Objects
 
         }
 
+        public override void Draw()
+        {
+            
+        }
+
         public override void Start()
         {
             
