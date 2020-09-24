@@ -10,7 +10,7 @@ namespace Task.Objects
     class GameObject
     {
         public Vector2 position;
-        List<Component> components;
+        private List<Component> components;
 
         public void Update()
         {

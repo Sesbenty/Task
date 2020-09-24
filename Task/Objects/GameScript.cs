@@ -8,6 +8,10 @@ namespace Task.Objects
 {
     class GameScript : Component
     {
+        public GameScript(GameObject parent):base(parent){
+
+        }
+
         public override void Start()
         {
             
@@ -15,7 +19,7 @@ namespace Task.Objects
 
         public override void Update()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task.Objects
+namespace Task
 {
-    class RenderObject
+    sealed class Time
     {
-
+        public static float deltaTime { get; set; }
     }
 }

@@ -11,5 +11,10 @@ namespace Task.Objects
         public GameObject gameObject { get; }
         public abstract void Start();
         public abstract void Update();
+
+        public Component(GameObject parent)
+        {
+            gameObject = parent;
+        }
     }
 }

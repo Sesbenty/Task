@@ -13,11 +13,18 @@ namespace Task.Objects
         public Bitmap sprite;
         public float height, width;
 
-        public Sprite(Bitmap sprite,float height, float width)
+        public Sprite(GameObject parent, Bitmap sprite,float height, float width):base(parent)
         {
             this.sprite = sprite;
             this.height = height;
             this.width = width;
+        }
+
+        public Sprite(GameObject parent, Bitmap sprite) : base(parent)
+        {
+            this.sprite = sprite;
+            this.height = sprite.Height;
+            this.width = sprite.Width;
         }
 
         public override void Start()
