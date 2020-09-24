@@ -53,10 +53,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Geometry\Matrix4x4.cs" />
-    <Compile Include="Geometry\Quaternion.cs" />
-    <Compile Include="Geometry\Vector3.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameBase.cs" />
+    <Compile Include="Geometry\Vector2.cs" />
     <Compile Include="LoopProject.cs" />
+    <Compile Include="Mathf.cs" />
+    <Compile Include="MoveInput.cs" />
+    <Compile Include="Objects\Component.cs" />
+    <Compile Include="Objects\GameObject.cs" />
+    <Compile Include="Objects\GameScript.cs" />
+    <Compile Include="Objects\RenderObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,7 +71,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Sprite.cs" />
+    <Compile Include="Objects\Sprite.cs" />
+    <Compile Include="Objects\Render.cs" />
+    <Compile Include="Time.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +93,7 @@
   <ItemGroup>
     <None Include="Resources\cat.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -28,9 +28,7 @@ namespace Task
         private void Form1_Load(object sender, EventArgs e)
         {
             Rectangle resolution = Screen.PrimaryScreen.Bounds;
-
-            Project myGame = new Project();
-            myGame.Resolution = new Size(resolution.Width, resolution.Height);
+            Game myGame = new GameBase(new Size(resolution.Width, resolution.Height));
 
             loopProject = new LoopProject();
             loopProject.Load(myGame);
@@ -41,7 +39,8 @@ namespace Task
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            loopProject.Draw(e.Graphics);
+            Render.gfx = e.Graphics;
+            loopProject.Draw();
         }
 
         private void GraphicsTimer_Tick(object sender, EventArgs e)
