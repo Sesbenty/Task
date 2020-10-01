@@ -55,10 +55,14 @@
     </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="GameBase.cs" />
+    <Compile Include="Geometry\Matrix4x4.cs" />
+    <Compile Include="Geometry\Vector4.cs" />
+    <Compile Include="Objects\GeometryObject.cs" />
     <Compile Include="Geometry\Vector2.cs" />
     <Compile Include="LoopProject.cs" />
     <Compile Include="Mathf.cs" />
     <Compile Include="MoveInput.cs" />
+    <Compile Include="MoveObj.cs" />
     <Compile Include="Objects\Component.cs" />
     <Compile Include="Objects\GameObject.cs" />
     <Compile Include="Objects\GameScript.cs" />
