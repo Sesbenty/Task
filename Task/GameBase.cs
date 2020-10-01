@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Task.Objects;
 using System.Drawing;
-
+using Task.Geometry;
 namespace Task
 {
     class GameBase : Game
@@ -33,8 +33,18 @@ namespace Task
             GameObject enemy = new GameObject();
             Sprite spriteEnemy = new Sprite(enemy, Properties.Resources.bear, 200, 100);
             enemy.AddComponent(spriteEnemy);
-
+            List<Vector2> points = new List<Vector2>();
+            Random r = new Random();
+            for (int i = 0; i < 30; i++)
+            {
+                points.Add(new Vector2((float)r.NextDouble() * 500, (float)r.NextDouble() * 500));
+            }
+            GeometryObj geometry = new GeometryObj(enemy,points);
+            enemy.AddComponent(geometry);
             enemy.position.x = 200;
+
+
+
 
             gameObjects.Add(enemy);
             gameObjects.Add(player);

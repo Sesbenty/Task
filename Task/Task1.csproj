@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="GameBase.cs" />
+    <Compile Include="Objects\GeometryObj.cs" />
     <Compile Include="Geometry\Vector2.cs" />
     <Compile Include="LoopProject.cs" />
     <Compile Include="Mathf.cs" />

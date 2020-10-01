@@ -21,7 +21,7 @@ namespace Task
             Paint += Form1_Paint;
             this.DoubleBuffered = true;
             graphicsTimer = new System.Windows.Forms.Timer();
-            graphicsTimer.Interval = 1000 / 120;
+            graphicsTimer.Interval = 1000 / 60;
             graphicsTimer.Tick += GraphicsTimer_Tick;
         }
 
