@@ -34,7 +34,6 @@ namespace Task
             GameObject enemy = new GameObject();
             Sprite spriteEnemy = new Sprite(enemy, Properties.Resources.bear, 200, 100);
             enemy.AddComponent(spriteEnemy);
-
             enemy.position.x = 200;
 
             gameObjects.Add(enemy);

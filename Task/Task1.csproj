@@ -55,9 +55,13 @@
     </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="GameBase.cs" />
+<<<<<<< HEAD
     <Compile Include="Geometry\Matrix4x4.cs" />
     <Compile Include="Geometry\Vector4.cs" />
     <Compile Include="Objects\GeometryObject.cs" />
+=======
+    <Compile Include="Objects\GeometryObj.cs" />
+>>>>>>> a54467378063af02b70c5af5407fe64773ee6a2b
     <Compile Include="Geometry\Vector2.cs" />
     <Compile Include="LoopProject.cs" />
     <Compile Include="Mathf.cs" />
